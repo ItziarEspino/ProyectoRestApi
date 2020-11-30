@@ -135,7 +135,7 @@ class HipicaRoutes {
         this._router.get('/nuevaI', this.getnInscripcion)
         this._router.get('/eliminar', this.getEliminar)
         this._router.get('/precio', this.getPinscrip)
-        this._router.get('/modificar', this.modi)
+        this._router.post('/modificar', this.modi)
     }
 }
 
