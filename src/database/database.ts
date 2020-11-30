@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 class DataBase {
 
-    private _cadenaConexion: string = 'mongodb://localhost/proyecto'
+    private _cadenaConexion: string = 'mongodb://localhost/test'
     constructor(){
 
     }

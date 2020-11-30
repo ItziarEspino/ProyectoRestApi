@@ -16,7 +16,7 @@ exports.db = void 0;
 const mongoose_1 = __importDefault(require("mongoose"));
 class DataBase {
     constructor() {
-        this._cadenaConexion = 'mongodb://localhost/proyecto';
+        this._cadenaConexion = 'mongodb://localhost/test';
         this.conectarBD = () => __awaiter(this, void 0, void 0, function* () {
             const promise = new Promise((resolve, reject) => __awaiter(this, void 0, void 0, function* () {
                 yield mongoose_1.default.connect(this._cadenaConexion, {
