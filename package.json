@@ -1,0 +1,19 @@
+{
+  "name": "ProyectoRestApi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "@types/mongoose": "^5.10.1",
+    "mongoose": "^5.10.16"
+  }
+}
