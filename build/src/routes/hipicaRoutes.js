@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.hipicaRoutes = void 0;
 const express_1 = require("express");
 const hipica_1 = require("../model/hipica");
-const database_1 = require("../src/database/database");
+const database_1 = require("../database/database");
 class HipicaRoutes {
     constructor() {
         //Mostrar las inscripciones
@@ -81,7 +81,7 @@ class HipicaRoutes {
             let t;
             const query = yield hipica_1.Clases.find({});
             for (t of query) {
-                const total = new hipica_1.Clases(t._id, t._tclases, t._diasem, t._caballop, t._pupilaje);
+                const total = new hipica_1.Clases(t._id);
                 const doc = {
                     identificador: total._id,
                     precio: total.cPrecio()

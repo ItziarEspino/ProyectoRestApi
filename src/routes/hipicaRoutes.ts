@@ -1,6 +1,6 @@
 import {Request, Response, Router } from 'express'
 import { Hipica, Clases, hHipica } from '../model/hipica'
-import { db } from '../src/database/database'
+import { db } from '../database/database'
 
 class HipicaRoutes {
     private _router: Router
@@ -87,7 +87,7 @@ class HipicaRoutes {
         let t: any
         const query = await Clases.find({})
         for (t of query) {
-            const total: any = new Clases(t._id, t._tclases, t._diasem, t._caballop, t._pupilaje)
+            const total: any = new Clases(t._id)
             const doc: i = {
                 identificador: total._id,
                 precio: total.cPrecio()

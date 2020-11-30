@@ -11,7 +11,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.identificacionRoutes = void 0;
 const express_1 = require("express");
-const database_1 = require("../src/database/database");
+const database_1 = require("../database/database");
 class IdentificacionRoutes {
     constructor() {
         this.getId = (req, res) => __awaiter(this, void 0, void 0, function* () {

@@ -1,5 +1,5 @@
 import { Request, Response, Router } from 'express'
-import { db } from '../src/database/database'
+import { db } from '../database/database'
 
 class IdentificacionRoutes {
     private _router: Router
